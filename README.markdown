@@ -38,10 +38,10 @@ Add the following into your Tomcat context.xml (or the context block of the serv
 
     <Valve className="com.radiadesign.catalina.session.RedisSessionHandlerValve" />
     <Manager className="com.radiadesign.catalina.session.RedisSessionManager"
-             host="localhost" <!-- optional: defaults to "localhost" -->
-             port="6379" <!-- optional: defaults to "6379" -->
-             database="0" <!-- optional: defaults to "0" -->
-             maxInactiveInterval="60" <!-- optional: defaults to "60" (in seconds) --> />
+             host="localhost" 
+             port="6379" 
+             database="0" 
+             maxInactiveInterval="60"  />
 
 The Valve must be declared before the Manager.
 
